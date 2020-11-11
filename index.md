@@ -1,10 +1,7 @@
 ---
 layout: default
-title: Konstantinos "xkon" Xenos
-description: WordPress Developer & Contributor
+title: Hi!
 ---
-# Hi!
-
 I’m Konstantinos “xkon” Xenos, a [WordPress Developer, Core Contributor & Privacy Component Maintainer](https://xkon.gr/wp-contributions/) from Greece.
 
 + Working with the Superhero team of [WPMU DEV](https://premium.wpmudev.org/){:target="_blank"}{:rel="noopener noreferrer"} as Head of DevOps and as a WordPress [Rubber Duck Debugger](https://en.wikipedia.org/wiki/Rubber_duck_debugging){:target="_blank"}{:rel="noopener noreferrer"}.
