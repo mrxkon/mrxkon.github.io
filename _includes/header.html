@@ -76,6 +76,12 @@
 			.gallery-item {
 				width: 100%;
 			}
+			.skiplink {
+				position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;
+			}
+			.skiplink:focus {
+				position: static; left: 0; width: auto; height: auto; overflow: visible; text-decoration: underline;
+			}
 			@media(max-width:425px) {
 				.site-title {
 					font-size: 18px;
@@ -91,6 +97,7 @@
 	</head>
 
 	<body>
+		<a href="#main" id="skiplink">Skip to main content</a>
 		<header>
 			<h1 class="site-title">
 				<a href="https://xkon.gr">{{ site.title }}</a>
@@ -124,5 +131,5 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
+		<main id="main">
 			<h2>{{ page.title }}</h2>
