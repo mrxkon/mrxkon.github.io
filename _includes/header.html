@@ -91,16 +91,17 @@
 	</head>
 
 	<body>
+		<header>
+			<h1 class="site-title">
+				<a href="https://xkon.gr">{{ site.title }}</a>
+			</h1>
 
-		<h1 class="site-title">
-			<a href="https://xkon.gr">{{ site.title }}</a>
-		</h1>
+			<div class="site-description">
+				{{ site.tagline }}
+			</div>
+		</header>
 
-		<div class="site-description">
-			{{ site.tagline }}
-		</div>
-
-		<nav aria-label="Navigation">
+		<nav>
 			<ul>
 				{% assign pages_list = site.pages %}
 				{% for node in pages_list %}
@@ -123,5 +124,5 @@
 				</li>
 			</ul>
 		</nav>
-		<main aria-label="Main Content">
+		<main>
 			<h2>{{ page.title }}</h2>
