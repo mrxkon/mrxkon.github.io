@@ -1,0 +1,10 @@
+---
+layout: default
+title: Tattoos
+tattoos: 32
+permalink: tattoos
+---
+<div class="gallery">
+	{% for num in (1...{{ page.tattoos }}) %}
+	<img class="gallery-item" src="/images/tattoos/{{ num }}.jpg">
+</div>
