@@ -37,7 +37,13 @@
 						{% if node.title != null %}
 							{% if node.layout == "default" %}
 								<li class="{% if page.url == node.url %}active{% endif %}">
-									<a href="{{ node.url }}">{{ node.title }}</a>
+									<a href="{{ node.url }}">
+										{% if node.title == "Hi!" %}
+											Home
+										{% else %}
+											{{ node.title }}
+										{% endif %}
+									</a>
 								</li>
 							{% endif %}
 						{% endif %}
