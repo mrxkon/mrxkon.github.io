@@ -1,9 +1,13 @@
 <!doctype html>
+
 <html lang="en-US">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+
 		<title>
 			{% if page.title == "Hi!" %}
 				{{ site.title }} &middot; {{ site.description }}
@@ -11,17 +15,21 @@
 				{{ page.title }} &middot; {{ site.title }}
 			{% endif %}
 		</title>
+
 		<style>body{font-size:18px;font-family:"Courier New",Courier,monospace;margin:10px}a{color:#00e;text-decoration:underline}a:hover{text-decoration:none}.body-wrap{max-width:750px;margin:0 auto}.site-title{margin:0}.site-description{font-weight:700}nav{margin-top:50px;margin-bottom:50px}nav.primary-navigation ul{list-style:none;padding:0;display:flex;justify-content:space-around}nav.primary-navigation ul li.current-menu-item{font-weight:700}.contributions table{font-size:12px;border-collapse:collapse}.contributions table tr td{border-bottom:1px solid #d3d3d3;padding:10px}.footer{margin-top:50px;border-top:1px solid #000}</style>
 	</head>
+
 	<body>
 		<div class="body-wrap">
+
 			<h1 class="site-title">
 				<a href="https://xkon.gr">{{ site.title }}</a>
 			</h1>
+
 			<div class="site-description">
 				{{ site.description }}
 			</div>
-			<h2>{{ page.title }}</h2>
+
 			<nav id="site-navigation" class="primary-navigation" role="navigation">
 				<ul>
 					{% assign pages_list = site.pages %}
@@ -34,3 +42,5 @@
 					{% endfor %}
 				</ul>
 			</nav>
+
+			<h2>{{ page.title }}</h2>
