@@ -5,6 +5,6 @@ permalink: tattoos
 ---
 <div class="gallery">
 	{% for i in (1..32) %}
-		<img class="gallery-item" alt="Photo of a Tattoo" src="/images/tattoos/{{ i }}.jpg" />
+		<img loading="lazy" class="gallery-item" alt="Photo of a Tattoo" src="/images/tattoos/{{ i }}.jpg" />
 	{% endfor %}
 </div>
