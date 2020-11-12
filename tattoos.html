@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Tattoos
-tattoos: 32
 permalink: tattoos
 ---
 <div class="gallery">
-	{% for num in (1...{{ page.tattoos }}) %}
-	<img class="gallery-item" src="/images/tattoos/{{ num }}.jpg">
+	{% for num in (1...32) %}
+		<img class="gallery-item" alt="Photo of a Tattoo" src="/images/tattoos/{{ num }}.jpg" />
 	{% endfor %}
 </div>
