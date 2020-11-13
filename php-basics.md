@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Basics - Tutorial
-permalink: php-basics
+permalink: /php-basics/
 description: In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
 ---
 In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
