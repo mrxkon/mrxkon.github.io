@@ -120,22 +120,15 @@
 
 		<nav>
 			<ul>
-				{% assign pages_list = site.pages | sort:"menu_order" %}
-				{% for node in pages_list %}
-					{% if node.title != null or node.title != "404 Error" %}
-						{% if node.layout == "default" %}
-							<li class="{% if page.url == node.url %}active{% endif %}">
-								<a href="{{ node.url }}">
-									{% if node.title == "Hi!" %}
-										Home
-									{% else %}
-										{{ node.title }}
-									{% endif %}
-								</a>
-							</li>
-						{% endif %}
-					{% endif %}
-				{% endfor %}
+				<li class="{% if page.url == '/' %}active{% endif %}">
+					<a href="{{ site.site_url }}">Home</a>
+				</li>
+				<li class="{% if page.url == '/wp-contributions' %}active{% endif %}">
+					<a href="{{ site.site_url }}/wp-contributions">WP Contributions</a>
+				</li>
+				<li class="{% if page.url == '/tattoos' %}active{% endif %}">
+					<a href="{{ site.site_url }}/tattoos">Tattoos</a>
+				</li>
 				<li>
 					<a href="https://github.com/mrxkon" target="_blank" rel="noopener noreferrer">GitHub</a>
 				</li>
