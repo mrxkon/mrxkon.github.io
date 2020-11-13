@@ -2,7 +2,6 @@
 layout: default
 title: PHP Basics - Tutorial
 permalink: php-basics
-menu_order: 3
 description: In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
 ---
 In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
