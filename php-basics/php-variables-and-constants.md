@@ -91,6 +91,7 @@ function wrong() {
 wrong();
 ```
 
+\-
 
 ```php
 <?php
@@ -122,6 +123,7 @@ mambo();
 echo $number;
 ```
 
+\-
 
 ```php
 <?php
