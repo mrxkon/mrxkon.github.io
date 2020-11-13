@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Hi!
-menu_order: 1
 description: I&#039;m Konstantinos &quot;xkon&quot; Xenos. WordPress Developer &amp; Contributor. Privacy Component Maintainer, advocate of quality code &amp; supporter of FOSS.
 ---
 I'm Konstantinos "xkon" Xenos, a [WordPress Developer, Core Contributor & Privacy Component Maintainer]({{ site.url }}/wp-contributions) from Greece.
