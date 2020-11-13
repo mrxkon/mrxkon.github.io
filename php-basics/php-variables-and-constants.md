@@ -90,9 +90,7 @@ function wrong() {
 
 wrong();
 ```
-
-\-
-
+&NewLine;
 ```php
 <?php
 
@@ -122,9 +120,7 @@ mambo();
 // But this wouldn't work.
 echo $number;
 ```
-
-\-
-
+&NewLine;
 ```php
 <?php
 
