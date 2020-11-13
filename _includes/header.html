@@ -17,6 +17,17 @@
 		<meta name="description" content="{{ page.description }}" />
 		<link rel="canonical" href="{{ site.site_url }}{{ page.url }}" />
 
+		<meta property="article:author" content="{{ site.author }}" />
+
+		<meta property="og:type" content="{% if page.title == 'Hi!'' %}website{% else %}article{% endif %}" />
+		<meta property="og:url" content="{{ site.site_url }}{{ page.url }}" />
+		<meta property="og:title" content="{% if page.title == 'Hi!' %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}" />
+		<meta property="og:description" content="{{ page.description }}" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="{% if page.title == 'Hi!' %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}" />
+		<meta name="twitter:description" content="{{ page.description }}" />
+
 		<style>
 			body {
 				max-width: 750px;
