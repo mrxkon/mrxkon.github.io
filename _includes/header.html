@@ -122,7 +122,7 @@
 			<ul>
 				{% assign pages_list = site.pages | sort:"menu_order" %}
 				{% for node in pages_list %}
-					{% if node.title != null or node.title != "404 Error - Page Not Found" %}
+					{% if node.title != null or node.title != "404 Error" %}
 						{% if node.layout == "default" %}
 							<li class="{% if page.url == node.url %}active{% endif %}">
 								<a href="{{ node.url }}">
