@@ -10,4 +10,4 @@ I'm Konstantinos "xkon" Xenos, a [WordPress Developer, Core Contributor & Privac
 - An advocate of quality code &amp; supporter of FOSS. Part of the awesome WP Lemon team that brought to you [Kirki Customizer Framework](https://kirki.org){:target="_blank"}{:rel="noopener noreferrer"} & [Gridd Theme](https://wplemon.com/gridd){:target="_blank"}{:rel="noopener noreferrer"}.
 - A proud member of the [WordPress Greek Community](https://wpgreece.org){:target="_blank"}{:rel="noopener noreferrer"} as an Athens WordCamp & Meetup organizer.
 
-While 'm not online… I'm spending my little free but quality time with my lovely wife & our 2 crazy dogs, [painting or tattooing]({{ site.url }}/wp-contributions).
+While 'm not online… I'm spending my little free but quality time with my lovely wife & our 2 crazy dogs, [painting or tattooing]({{ site.url }}/tattoos).
