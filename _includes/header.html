@@ -12,10 +12,7 @@
 		<link rel="apple-touch-icon" href="/images/favicon/180x180.png" />
 		<meta name="msapplication-TileImage" content="/images/favicon/270x270.png" />
 
-		<meta name="description" content="{{ page.description }}" />
-
 		<link rel="canonical" href="{{ site.site_url }}{{ page.url }}" />
-
 		<title>
 			{% if page.title == "Hi!" %}
 				{{ site.title }} &middot; {{ site.tagline }}
@@ -23,6 +20,7 @@
 				{{ page.title }} &middot; {{ site.title }}
 			{% endif %}
 		</title>
+		<meta name="description" content="{{ page.description }}" />
 
 		<style>
 			body {
