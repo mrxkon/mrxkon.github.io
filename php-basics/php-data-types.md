@@ -4,7 +4,7 @@ title: PHP Data Types
 permalink: /php-basics/php-data-types/
 description: Now it&#039;s a good time to talk a bit about the other PHP Data Types that exist!
 ---
-We previously covered [PHP Strings]({{ site.site_url }}/php-strings). Now it's a good time to talk a bit about the other PHP Data Types that exist!
+We previously covered [PHP Strings]({{ site.site_url }}/php-basics/php-strings). Now it's a good time to talk a bit about the other PHP Data Types that exist!
 
 You will be using all of them, so it's good to know about them as well before journeying further.
 
@@ -16,7 +16,7 @@ You will be using all of them, so it's good to know about them as well before jo
 - [Float](#float).
 - [Array](#array).
 - [Object](#object).
-- [Strings]({{ site.site_url }}/php-strings).
+- [Strings]({{ site.site_url }}/php-basics/php-strings).
 
 ## Null
 
