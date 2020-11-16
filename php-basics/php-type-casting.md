@@ -80,6 +80,11 @@ $ten = 10;
 $cast = (string) $ten;
 
 var_dump( $cast );
+```
+
+<br/>
+
+```php
 <?php
 
 /**
@@ -214,6 +219,11 @@ var_dump( $d );
 
 $e = (array) 10.34;
 var_dump( $e );
+```
+
+<br/>
+
+```php
 <?php
 
 /**
