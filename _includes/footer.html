@@ -9,8 +9,6 @@
 			function toggleDarkMode() {
 				var toggler = document.getElementById( 'dark-mode-toggler' );
 
-				toggler.preventDefault();
-
 				if ( 'false' === toggler.getAttribute( 'data-active' ) ) {
 					toggler.setAttribute( 'data-active', 'false' );
 					toggler.innerHTML = 'Enable dark mode.';
