@@ -3,6 +3,7 @@ layout: default
 title: PHP Strings
 permalink: /php-basics/php-strings/
 description: Eighty percent (or more) of the time, when you want to output something it will be by using PHP strings. Let&#039;s see how that works!
+body_class: php-strings
 ---
 Eighty percent (or more) of the time, when you want to output something it will be by using PHP strings. Let's see how that works!
 

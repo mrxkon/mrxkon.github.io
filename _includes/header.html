@@ -53,8 +53,8 @@
 				border-bottom: 1px solid #d3d3d3;
 				padding: 10px;
 			}
-			table td:nth-child(1),
-			table td:nth-child(2) {
+			body.php-operators table td:nth-child(1),
+			body.php-operators table td:nth-child(2) {
 				white-space: nowrap;
 			}
 			nav {
@@ -358,7 +358,7 @@
 		</style>
 	</head>
 
-	<body>
+	<body class="{{ page.body_class }}">
 		<a href="#main" class="skiplink">Skip to main content</a>
 		<header>
 			<h1 class="site-title">

@@ -3,6 +3,7 @@ layout: default
 title: PHP Basics - Tutorial
 permalink: /php-basics/
 description: In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
+body_class: php-basics
 ---
 In PHP Basics, you'll find useful information to start your journey on learning how to write code using PHP.
 

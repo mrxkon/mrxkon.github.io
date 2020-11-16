@@ -3,6 +3,7 @@ layout: default
 title: WP Contributions
 permalink: /wp-contributions/
 description: List of implemented and ongoing WP contributions as well as events that I&#039;ve organized or volunteered.
+body_class: wp-contributions
 ---
 WordPress.org username: [xkon](https://profiles.wordpress.org/xkon){:target="_blank"}{:rel="noopener noreferrer"}
 

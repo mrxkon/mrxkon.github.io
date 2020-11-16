@@ -3,6 +3,7 @@ layout: default
 title: PHP Conditionals
 permalink: /php-basics/php-conditionals/
 description: PHP Conditionals are used to run a block of code on different conditions. It&#039;s similar to what we&#039;ve seen on PHP Loops but this is more of a one-time thing.
+body_class: php-conditionals
 ---
 You will be using PHP Conditionals to run a block of code on different conditions. You already saw something similar while reading about [PHP Loops]({{ site.site_url }}/php-basics/php-loops). This is more of a one-time thing though, as "if this is the case then do this". It's that simple.
 

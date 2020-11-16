@@ -3,6 +3,7 @@ layout: default
 title: PHP Variables &amp; Constants
 permalink: /php-basics/php-variables-and-constants/
 description: PHP variables &amp; constants are used for storing information that we can retrieve later on in our code. The key difference is the variables data can be...
+body_class: php-variables-and-constants
 ---
 You can retrieve in your code anything that you have stored in PHP variables & constants. Variables data can be changed and constants are permanent, that's a key difference.
 

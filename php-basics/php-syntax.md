@@ -3,6 +3,7 @@ layout: default
 title: PHP Syntax
 permalink: /php-basics/php-syntax/
 description: PHP is a programming language that is what I like to call &quot;talkative&quot; by itself so if you pay attention to its syntax it is really easy to understand.
+body_class: php-syntax
 ---
 PHP is what I like to call "talkative". If you pay attention to its syntax it is really easy to understand and follow.
 
