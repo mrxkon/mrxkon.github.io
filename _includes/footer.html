@@ -1,8 +1,57 @@
 		</main>
 		<footer>
 			<p>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.site_url }}">{{ site.title }}</a> &middot; <a href="{{ site.site_url }}/privacy-policy/">Privacy Policy</a>.</p>
-			<p><a href="#" onClick="toggleDarkMode();" id="dark-mode-toggler"><span>Enable</span> dark mode.</a></p>
+			<p><a href="#" onClick="toggleDarkMode()" data-active="false" id="dark-mode-toggler"><span id="dark-mode-toggler-text">Enable</span> dark mode.</a></p>
 			<p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, built with <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">Jekyll</a> &amp; served via <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">Cloudflare</a>.</p>
 		</footer>
+
+		<script>
+			function toggleDarkMode() {
+				var toggler = document.getElementById( 'dark-mode-toggler' ),
+					togger_text = document.getElementById( 'dark-mode-toggler-text' );
+
+				if ( 'false' === toggler.getAttribute( 'aria-pressed' ) ) {
+					toggler.setAttribute( 'data-active', 'false' );
+					toggler_text.innerHTML( 'Enable' );
+					document.documentElement.classList.add( 'is-dark-theme' );
+					document.body.classList.add( 'is-dark-theme' );
+					window.localStorage.setItem( 'xkongrDarkMode', 'yes' );
+				} else {
+					toggler.setAttribute( 'data-active', 'true' );
+					toggler_text.innerHTML( 'Disable' );
+					document.documentElement.classList.remove( 'is-dark-theme' );
+					document.body.classList.remove( 'is-dark-theme' );
+					window.localStorage.setItem( 'xkongrDarkMode', 'no' );
+				}
+			}
+
+			function darkModeInitialLoad() {
+				var toggler = document.getElementById( 'dark-mode-toggler' ),
+					togger_text = document.getElementById( 'dark-mode-toggler-text' )
+					isDarkMode = window.matchMedia( '(prefers-color-scheme: dark)' ).matches;
+
+				if ( 'yes' === window.localStorage.getItem( 'xkongrDarkMode' ) ) {
+					isDarkMode = true;
+				} else if ( 'no' === window.localStorage.getItem( 'xkongrDarkMode' ) ) {
+					isDarkMode = false;
+				}
+
+				if ( isDarkMode ) {
+					toggler.setAttribute( 'data-active', 'true' );
+				}
+
+				if ( isDarkMode ) {
+					toggler_text.innerHTML( 'Disable' );
+					document.documentElement.classList.add( 'is-dark-theme' );
+					document.body.classList.add( 'is-dark-theme' );
+				} else {
+					toggler_text.innerHTML( 'Enable' );
+					document.documentElement.classList.remove( 'is-dark-theme' );
+					document.body.classList.remove( 'is-dark-theme' );
+				}
+			}
+
+			darkModeInitialLoad();
+		</script>
 	</body>
 </html>
