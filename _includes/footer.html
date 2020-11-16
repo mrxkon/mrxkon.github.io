@@ -35,12 +35,12 @@
 				}
 
 				if ( isDarkMode ) {
-					toggler.setAttribute( 'data-active', 'false' );
+					toggler.setAttribute( 'data-active', 'true' );
 					toggler.innerHTML = 'Disable dark mode.';
 					document.documentElement.classList.add( 'is-dark-theme' );
 					document.body.classList.add( 'is-dark-theme' );
 				} else {
-					toggler.setAttribute( 'data-active', 'true' );
+					toggler.setAttribute( 'data-active', 'false' );
 					toggler.innerHTML = 'Enable dark mode.';
 					document.documentElement.classList.remove( 'is-dark-theme' );
 					document.body.classList.remove( 'is-dark-theme' );
