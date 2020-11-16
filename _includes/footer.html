@@ -1,7 +1,7 @@
 		</main>
 		<footer>
 			<p>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.site_url }}">{{ site.title }}</a> &middot; <a href="{{ site.site_url }}/privacy-policy/">Privacy Policy</a>.</p>
-			<p><a href="#" onClick="toggleDarkMode()" data-active="false" id="dark-mode-toggler">Enable dark mode.</a></p>
+			<p><a href="#" data-active="false" id="dark-mode-toggler">Enable dark mode.</a></p>
 			<p>Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, built with <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">Jekyll</a> &amp; served via <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">Cloudflare</a>.</p>
 		</footer>
 
@@ -9,7 +9,9 @@
 			function toggleDarkMode() {
 				var toggler = document.getElementById( 'dark-mode-toggler' );
 
-				if ( 'false' === toggler.getAttribute( 'aria-pressed' ) ) {
+				toggler.preventDefault();
+
+				if ( 'false' === toggler.getAttribute( 'data-active' ) ) {
 					toggler.setAttribute( 'data-active', 'false' );
 					toggler.innerHTML = 'Enable dark mode.';
 					document.documentElement.classList.add( 'is-dark-theme' );
@@ -45,6 +47,11 @@
 					document.body.classList.remove( 'is-dark-theme' );
 				}
 			}
+
+			document.querySelector( '#dark-mode-toggler' ).addEventListener( 'click', function( event ) {
+			 	event.preventDefault();
+				toggleDarkMode();
+			}, false );
 
 			darkModeInitialLoad();
 		</script>
