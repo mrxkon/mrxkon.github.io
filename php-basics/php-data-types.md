@@ -220,4 +220,4 @@ var_dump( $a_house->bathrooms );
 
 ## Extra Tips on PHP Data Types
 
-You have to be really careful with data types as they can result in unwanted situations when trying to compare them. For this, I'll tell you about PHP Type Casting in a future tutorial.
+You have to be really careful with data types as they can result in unwanted situations when trying to compare them. For this, I'll tell you about [PHP Type Casting]({{ site.site_url }}/php-basics/php-type-casting) in a future tutorial.
