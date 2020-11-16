@@ -5,7 +5,7 @@ permalink: /php-basics/php-type-casting/
 description: PHP Type Casting comes along with PHP Data Types. But as I&#039;ve mentioned comparing data types or using them wrongly might result in errors.
 body_class: php-type-casting
 ---
-PHP Type Casting comes along with [PHP Data Types]({{ site.site_url }}/php-basics/php-data-types). But as I've mentioned comparing data types or using them wrongly might result in errors or unwanted behavior in your code.
+PHP Type Casting comes along with [PHP Data Types]({{ site.site_url }}/php-basics/php-data-types/). But as I've mentioned comparing data types or using them wrongly might result in errors or unwanted behavior in your code.
 
 You can cast either explicitly (manually) or leave it as implicit (automated).
 

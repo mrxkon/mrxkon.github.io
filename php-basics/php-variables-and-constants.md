@@ -7,7 +7,7 @@ body_class: php-variables-and-constants
 ---
 You can retrieve in your code anything that you have stored in PHP variables & constants. Variables data can be changed and constants are permanent, that's a key difference.
 
-If you've read the [PHP Syntax]({{ site.site_url }}/php-basics/php-syntax) article, you already know that it's always good to name your variables and constants with something that is related to your code. You will easily remember and identify them this way.
+If you've read the [PHP Syntax]({{ site.site_url }}/php-basics/php-syntax/) article, you already know that it's always good to name your variables and constants with something that is related to your code. You will easily remember and identify them this way.
 
 ## PHP Variables & Constants TOC
 
@@ -40,7 +40,7 @@ $current age = 36;
 
 You can declare new values since the data in a variable can be changed, but only the last one will be returned.
 
-Don't get confused for the time being if '' is used or not. You will be able to read about [data types]({{ site.site_url }}/php-basics/php-data-types), [type casting]({{ site.site_url }}/php-basics/php-type-casting) and [strings]({{ site.site_url }}/php-basics/php-strings) in future posts.
+Don't get confused for the time being if '' is used or not. You will be able to read about [data types]({{ site.site_url }}/php-basics/php-data-types/), [type casting]({{ site.site_url }}/php-basics/php-type-casting/) and [strings]({{ site.site_url }}/php-basics/php-strings/) in future posts.
 
 ```php
 <?php

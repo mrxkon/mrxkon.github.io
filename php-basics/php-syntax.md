@@ -38,7 +38,7 @@ $basics = 'Basics';
 echo $say . $bAsIcS;
 ```
 
-Even though some aspects of the language are case insensitive it is good practice to use standards in your code. Try to have consistency i.e. for [variables]({{ site.site_url }}/php-basics/php-variables-and-constants) use lowercase letters and capitalize your classes. This consistency will help you as well as the code will be easier to be read by others.
+Even though some aspects of the language are case insensitive it is good practice to use standards in your code. Try to have consistency i.e. for [variables]({{ site.site_url }}/php-basics/php-variables-and-constants/) use lowercase letters and capitalize your classes. This consistency will help you as well as the code will be easier to be read by others.
 
 ## Comments in PHP Syntax
 

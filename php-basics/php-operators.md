@@ -7,7 +7,7 @@ body_class: php-operators
 ---
 You will be using **PHP Operators** to perform actions on certain values. You can use them to perform various actions within your PHP. Such as math, comparisons, for conditions and for assignments to name a few.
 
-Make sure to give a good read at this last part of the [PHP Basics]({{ site.site_url }}/php-basics) tutorials as there are plenty of operators to remember. You can always come back here though for a quick review if needed!
+Make sure to give a good read at this last part of the [PHP Basics]({{ site.site_url }}/php-basics/) tutorials as there are plenty of operators to remember. You can always come back here though for a quick review if needed!
 
 ## PHP Operators TOC
 - [Assignment](#assignment).
@@ -105,7 +105,7 @@ Operator|Syntax|Description
 `<=>`|`2 <=> 1`|Returns 1 as left side is greater.
 `<=>`|`1 <=> 2`|Returns -1 as right side is greater.
 
-The spaceship operator was added since PHP 7. You can compare [integers]({{ site.site_url }}/php-basics/php-data-types/#integer), [floats]({{ site.site_url }}/php-basics/php-data-types/#float) or [strings]({{ site.site_url }}/php-basics/php-strings).
+The spaceship operator was added since PHP 7. You can compare [integers]({{ site.site_url }}/php-basics/php-data-types/#integer), [floats]({{ site.site_url }}/php-basics/php-data-types/#float) or [strings]({{ site.site_url }}/php-basics/php-strings/).
 
 ## Null Coalescing
 
@@ -114,7 +114,7 @@ Operator|Syntax|Description
 ---|---|---
 `??`|`$a ?? 1`|Returns 1 if $a was null.
 
-The null coalescing operator was introduced since PHP 7. It's basically like an `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals) but it only does one thing.
+The null coalescing operator was introduced since PHP 7. It's basically like an `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals/) but it only does one thing.
 
 If the variable checked is null, it will assign it the new value.
 
@@ -158,9 +158,9 @@ Operator|Syntax|Description
 ---|---|---
 `?:`|`$a ?: 1`|Returns 1 if $a was null.
 
-The ternary operator is like a short `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals) as well.
+The ternary operator is like a short `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals/) as well.
 
-Its full [syntax]({{ site.site_url }}/php-basics/php-syntax) is like this to understand it a bit better.
+Its full [syntax]({{ site.site_url }}/php-basics/php-syntax/) is like this to understand it a bit better.
 
 `(condition) ? ( // code if true ) : ( // code if false )`
 
@@ -194,4 +194,4 @@ echo ( 1 === $number ) ?: 'There is no number!';
 
 ## Extra Tips for PHP Operators
 
-Make sure to be comparing equal [data types]({{ site.site_url }}/php-basics/php-data-types). Comparing or doing math etc on strings vs numbers, for example, will be returning wrong results, if not errors.
+Make sure to be comparing equal [data types]({{ site.site_url }}/php-basics/php-data-types/). Comparing or doing math etc on strings vs numbers, for example, will be returning wrong results, if not errors.

@@ -5,7 +5,7 @@ permalink: /php-basics/php-conditionals/
 description: PHP Conditionals are used to run a block of code on different conditions. It&#039;s similar to what we&#039;ve seen on PHP Loops but this is more of a one-time thing.
 body_class: php-conditionals
 ---
-You will be using PHP Conditionals to run a block of code on different conditions. You already saw something similar while reading about [PHP Loops]({{ site.site_url }}/php-basics/php-loops). This is more of a one-time thing though, as "if this is the case then do this". It's that simple.
+You will be using PHP Conditionals to run a block of code on different conditions. You already saw something similar while reading about [PHP Loops]({{ site.site_url }}/php-basics/php-loops/). This is more of a one-time thing though, as "if this is the case then do this". It's that simple.
 
 ## PHP Conditionals TOC
 
@@ -18,7 +18,7 @@ You will be using PHP Conditionals to run a block of code on different condition
 
 The `if` conditional will run the block of code that exists inside the curly brackets only if the condition within the parenthesis is true.
 
-The `if` conditional [syntax]({{ site.site_url }}/php-basics/php-syntax).
+The `if` conditional [syntax]({{ site.site_url }}/php-basics/php-syntax/).
 
 `if ( condition ) { // code }`
 
@@ -182,7 +182,7 @@ switch ( $batch ) {
 
 ## Extra Tips on PHP Conditionals
 
-If all the `>=`, `===` and other symbols in conditions that you see here are confusing, they are called [PHP Operators]({{ site.site_url }}/php-basics/php-operators) and we will check those on an upcoming tutorial!
+If all the `>=`, `===` and other symbols in conditions that you see here are confusing, they are called [PHP Operators]({{ site.site_url }}/php-basics/php-operators/) and we will check those on an upcoming tutorial!
 
 For any of the mentioned cases of `if` conditionals, it's good to know that you can also nest them together. You can use a mixture of them as you see fit for your code.
 

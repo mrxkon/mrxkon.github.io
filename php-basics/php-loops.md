@@ -15,7 +15,7 @@ PHP Loops are used to run a block of code until a condition is met. You can use 
 
 ## For
 
-I'd say that the `for` loop is one of the weirdest to use. But if you can understand it's basic it becomes really easy. Let's see the [syntax]({{ site.site_url }}/php-basics/php-syntax) first.
+I'd say that the `for` loop is one of the weirdest to use. But if you can understand it's basic it becomes really easy. Let's see the [syntax]({{ site.site_url }}/php-basics/php-syntax/) first.
 
 You have to use three expressions here as a starting point, an ending point and in the middle the conditional that you are checking with.
 
