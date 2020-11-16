@@ -11,13 +11,13 @@
 
 				if ( 'false' === toggler.getAttribute( 'aria-pressed' ) ) {
 					toggler.setAttribute( 'data-active', 'false' );
-					toggler.innerHTML( 'Enable dark mode.' );
+					toggler.innerHTML = 'Enable dark mode.';
 					document.documentElement.classList.add( 'is-dark-theme' );
 					document.body.classList.add( 'is-dark-theme' );
 					window.localStorage.setItem( 'xkongrDarkMode', 'yes' );
 				} else {
 					toggler.setAttribute( 'data-active', 'true' );
-					toggler.innerHTML( 'Disable dark mode.' );
+					toggler.innerHTML = 'Disable dark mode.';
 					document.documentElement.classList.remove( 'is-dark-theme' );
 					document.body.classList.remove( 'is-dark-theme' );
 					window.localStorage.setItem( 'xkongrDarkMode', 'no' );
@@ -36,11 +36,11 @@
 
 				if ( isDarkMode ) {
 					toggler.setAttribute( 'data-active', 'true' );
-					toggler.innerHTML( 'Disable dark mode.' );
+					toggler.innerHTML = 'Disable dark mode.';
 					document.documentElement.classList.add( 'is-dark-theme' );
 					document.body.classList.add( 'is-dark-theme' );
 				} else {
-					toggler.innerHTML( 'Enable dark mode.' );
+					toggler.innerHTML = 'Enable dark mode.';
 					document.documentElement.classList.remove( 'is-dark-theme' );
 					document.body.classList.remove( 'is-dark-theme' );
 				}
