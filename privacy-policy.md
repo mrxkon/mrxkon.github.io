@@ -20,4 +20,4 @@ The website is hosted on **GitHub Pages** and served via **Cloudflare**. Both of
 
 ## Cookies
 
-The `_cfduid` cookie helps Cloudflare detect malicious visitors to this website and minimizes blocking legitimate users. It is placed on your device identify you as an individual client behind a shared IP address and apply security settings. It is necessary for supporting Cloudflare's security features. The cookie collects and anonymizes your IP address using a one-way hash of certain values so they cannot be personally identified. The cookie is a session cookie that expires after 30 days.
+The `__cfduid` cookie helps Cloudflare detect malicious visitors to this website and minimizes blocking legitimate users. It is placed on your device identify you as an individual client behind a shared IP address and apply security settings. It is necessary for supporting Cloudflare's security features. The cookie collects and anonymizes your IP address using a one-way hash of certain values so they cannot be personally identified. The cookie is a session cookie that expires after 30 days.
