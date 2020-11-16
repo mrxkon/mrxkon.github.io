@@ -14,7 +14,7 @@ The website is not collecting any personally identifiable information.
 
 The website is hosted on **GitHub Pages** and served via **Cloudflare**. Both of the services may collect end-user IPs for security purposes.
 
-[Read more on Github Pages](https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages){:target="_blank"}{:rel="noopener noreferrer"} privacy policy.
+[Read more on Github Pages](https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages){:target="_blank"}{:rel="noopener noreferrer"}.
 
 [Read more on Cloudflare](https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies){:target="_blank"}{:rel="noopener noreferrer"}.
 
