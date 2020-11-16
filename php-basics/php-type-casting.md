@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Type Casting
-permalink: /php-basics/php-data-types/
+permalink: /php-basics/php-type-casting/
 description: PHP Type Casting comes along with PHP Data Types. But as I&#039;ve mentioned comparing data types or using them wrongly might result in errors.
 ---
 
