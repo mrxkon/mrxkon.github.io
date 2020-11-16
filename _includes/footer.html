@@ -8,7 +8,7 @@
 		<script>
 			function toggleDarkMode() {
 				var toggler = document.getElementById( 'dark-mode-toggler' ),
-					togger_text = document.getElementById( 'dark-mode-toggler-text' );
+					toggler_text = document.getElementById( 'dark-mode-toggler-text' );
 
 				if ( 'false' === toggler.getAttribute( 'aria-pressed' ) ) {
 					toggler.setAttribute( 'data-active', 'false' );
@@ -27,7 +27,7 @@
 
 			function darkModeInitialLoad() {
 				var toggler = document.getElementById( 'dark-mode-toggler' ),
-					togger_text = document.getElementById( 'dark-mode-toggler-text' ),
+					toggler_text = document.getElementById( 'dark-mode-toggler-text' ),
 					isDarkMode = window.matchMedia( '(prefers-color-scheme: dark)' ).matches;
 
 				if ( 'yes' === window.localStorage.getItem( 'xkongrDarkMode' ) ) {
