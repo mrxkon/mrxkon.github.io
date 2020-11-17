@@ -28,6 +28,11 @@ I have to mention now just for general knowledge that PHP syntax is **semi case 
 
 echo 'PHP';
 eChO 'Basics';
+```
+
+<br/>
+
+```php
 <?php
 
 // But this would output just "PHP".
