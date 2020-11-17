@@ -21,3 +21,7 @@ The website is hosted on **GitHub Pages** and served via **Cloudflare**. Both of
 ## Cookies
 
 The `__cfduid` cookie helps Cloudflare detect malicious visitors to this website and minimizes blocking legitimate users. It is placed on your device identify you as an individual client behind a shared IP address and apply security settings. It is necessary for supporting Cloudflare's security features. The cookie collects and anonymizes your IP address using a one-way hash of certain values so they cannot be personally identified. The cookie is a session cookie that expires after 30 days.
+
+## LocalStorage
+
+The website offers a **Dark Mode** functionality. In order for the functionality to properly work, a LocalStorage entry is placed as `xkongrDarkMode` with a value of `yes` or `no` depending on the option that you have selected so the site can adjust to the correct CSS when you re-visit in the future.
