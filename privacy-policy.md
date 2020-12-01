@@ -8,6 +8,7 @@ body_class: privacy-policy
 ## Site Information
 
 Owner: Konstantinos Xenos
+
 Site URI: https://xkon.dev
 
 The website is not collecting any personally identifiable information.
