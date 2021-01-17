@@ -32,19 +32,24 @@ Code commits (props): 220
 
 Component|Summary
 ---|---
-Administration|[#34991 Introduce a typographic measure for the admin screens](https://core.trac.wordpress.org/ticket/34991){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#52299 Exported user data can be listed with directory listing](https://core.trac.wordpress.org/ticket/52299){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#51849 I18N - Translation strings in privacy-tools.php are inconsistent in it's wording to privacy-tools.js](https://core.trac.wordpress.org/ticket/51849){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#44683 Export and Erase personal data - emails sent to wrong address if username is an email address which is different from the actual email address](https://core.trac.wordpress.org/ticket/44683){:target="_blank"}{:rel="noopener noreferrer"}
+Application Passwords|[#51899 Improve Application Passwords section layout in user profile](https://core.trac.wordpress.org/ticket/51899){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#49264 Consider a redesign for the Policy Settings page (includes Policy Guide and future Disclosures & Policies)](https://core.trac.wordpress.org/ticket/49264){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#44314 `user_confirmed_action_email_content` filter run on two different strings](https://core.trac.wordpress.org/ticket/44314){:target="_blank"}{:rel="noopener noreferrer"}
+Administration|[#47327 Avoid italic text for better accessibility and readability](https://core.trac.wordpress.org/ticket/47327){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#49035 Add Export & Erasure requests to a dashboard widget.](https://core.trac.wordpress.org/ticket/49035){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44043 Framework for logging/retrieving a users consent state](https://core.trac.wordpress.org/ticket/44043){:target="_blank"}{:rel="noopener noreferrer"}
+Privacy|[#43890 Allow Admin to Skip e-mail confirmation for Export/Anonymization](https://core.trac.wordpress.org/ticket/43890){:target="_blank"}{:rel="noopener noreferrer"}
+Administration|[#34991 Introduce a typographic measure for the admin screens](https://core.trac.wordpress.org/ticket/34991){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#46897 Personal Data Export Report: Mobile friendly](https://core.trac.wordpress.org/ticket/46897){:target="_blank"}{:rel="noopener noreferrer"}
 Toolbar|[#48894 Improve the small user sub window at the right corner on the admin bar a.k.a. the Howdy fly-out](https://core.trac.wordpress.org/ticket/48894){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44176 Un-map Privacy Capabilities](https://core.trac.wordpress.org/ticket/44176){:target="_blank"}{:rel="noopener noreferrer"}
-Administration|[#47327 Avoid italic text for better accessibility and readability](https://core.trac.wordpress.org/ticket/47327){:target="_blank"}{:rel="noopener noreferrer"}
-Privacy|[#43890 Allow Admin to Skip e-mail confirmation for Export/Anonymization](https://core.trac.wordpress.org/ticket/43890){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44266 Add per-request-row delete row action for privacy actions](https://core.trac.wordpress.org/ticket/44266){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44222 Add Archive state to privacy requests](https://core.trac.wordpress.org/ticket/44222){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44133 Should the Data Export indicate when we have no information on the user](https://core.trac.wordpress.org/ticket/44133){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#43437 Add way for registered users to request deletion or anonymization of their private data](https://core.trac.wordpress.org/ticket/43437){:target="_blank"}{:rel="noopener noreferrer"}
-Privacy|[#49035 Add Export & Erasure requests to a dashboard widget.](https://core.trac.wordpress.org/ticket/49035){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#49357 Admin intervention for personal data export really needed?](https://core.trac.wordpress.org/ticket/49357){:target="_blank"}{:rel="noopener noreferrer"}
 Upgrade/Install|[#40966 Double clicking the Update plugins-button gives... interesting experience!](https://core.trac.wordpress.org/ticket/40966){:target="_blank"}{:rel="noopener noreferrer"}
 Privacy|[#44145 Rework Privacy settings page to use the Settings API](https://core.trac.wordpress.org/ticket/44145){:target="_blank"}{:rel="noopener noreferrer"}
