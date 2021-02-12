@@ -4,7 +4,7 @@
 	"description": "Personal site",
 	"main": "index.js",
 	"repository": {
-	"type": "git",
+		"type": "git",
 		"url": "git+https://github.com/mrxkon/mrxkon.github.io.git"
 	},
 	"scripts": {
