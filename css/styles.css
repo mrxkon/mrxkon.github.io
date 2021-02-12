@@ -314,12 +314,20 @@ header nav a.active {
 	background: var(--color-dark-purple);
 	color: var(--color-white);
 }
+
+.home .content h2 {
+	text-align: center;
+	margin-top: 0;
+}
+.home .content .box-wrapper {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
 .home .content .box-grid {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-gap: 1rem;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
 }
 
 .home .content .box {
@@ -327,12 +335,15 @@ header nav a.active {
 	background-color: transparent;
 	background-image: linear-gradient(80deg, #e25738 0%, #f2295b 100%);
 	border-style: solid;
-	border-width: 2px 2px 100px 0px;
-	border-color: rgba(0,0,0,0.09);
-	border-radius: 5px 5px 200px 5px;
+	border-width: 0px;
+	border-radius: 5px 5px 100px 5px;
 	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 15%);
 }
 
 .home .content .box a {
 	color:var(--color-white);
+}
+
+footer {
+	font-size: var(--font-size-xs);
 }
