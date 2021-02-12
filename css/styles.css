@@ -394,6 +394,22 @@ header nav a.active {
 	}
 }
 
+.tattoo-gallery {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 1rem;
+}
+
+.tattoo-gallery img {
+	max-width: 100%;
+}
+
+@media (max-width: 425px) {
+	.tattoo-gallery {
+		grid-template-columns: 1fr;
+	}
+}
+
 .pre-footer {
 	background-color: transparent;
 	background-image: var(--color-gradient-pink-to-yellow);
