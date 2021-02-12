@@ -2,8 +2,11 @@
 		<div class="pre-footer"></div>
 		<footer>
 			<div class="container">
-				&copy; {{ site.time | date: '%Y' }} <a href="{{ site.site_url }}">xkon</a> &therefore; <a href="{{ site.site_url }}/privacy-policy/">Privacy Policy</a> &therefore; Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> &amp; served via <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> &therefore; Theme styling inspired from <a target="_blank" href="https://www.cssigniter.com/">CSSIgniter</a>.
+				&copy; {{ site.time | date: '%Y' }} <a href="{{ site.site_url }}">xkon</a> &therefore; <a href="{{ site.site_url }}/privacy-policy/">Privacy Policy</a> &therefore; Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> &amp; served via <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> &therefore; Theme inspired from <a target="_blank" href="https://www.cssigniter.com/">CSSIgniter</a>.
 			</div>
 		</footer>
+		{% if page.url contains '/php-basics/' %}
+		<script src="{{ site.site_url }}/js/prism.js" data-manual></script>
+		{% endif %}
 	</body>
 </html>

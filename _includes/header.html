@@ -20,6 +20,9 @@
 		<meta name="twitter:title" content="{% if page.title == 'Hi!' %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}" />
 		<meta name="twitter:description" content="{{ page.description }}" />
 		<link href="{{ site.site_url }}/css/styles.css" rel="stylesheet" />
+		{% if page.url contains '/php-basics/' %}
+		<link href="{{ site.site_url }}/css/prism.css" rel="stylesheet" />
+		{% endif %}
 	</head>
 
 	<body class="{{ page.body_class }}">
