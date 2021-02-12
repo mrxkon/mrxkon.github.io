@@ -1,25 +1,25 @@
 {
-  "name": "mrxkon.github.io",
-  "version": "1.0.0",
-  "description": "Personal site",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrxkon/mrxkon.github.io.git"
-  },
-  "scripts": {
-    "build": "sass css/styles.scss css/styles.css",
-    "watch": "nodemon -e scss -x \"npm run build\""
-  },
-  "keywords": [],
-  "author": "Konstantinos Xenos",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/mrxkon/mrxkon.github.io/issues"
-  },
-  "homepage": "https://github.com/mrxkon/mrxkon.github.io#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.7",
-    "sass": "^1.32.7",
-  }
+	"name": "mrxkon.github.io",
+	"version": "1.0.0",
+	"description": "Personal site",
+	"main": "index.js",
+	"repository": {
+	"type": "git",
+		"url": "git+https://github.com/mrxkon/mrxkon.github.io.git"
+	},
+	"scripts": {
+		"build": "sass css/styles.scss css/styles.css",
+		"watch": "nodemon -e scss -x \"npm run build\""
+	},
+	"keywords": [],
+	"author": "Konstantinos Xenos",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/mrxkon/mrxkon.github.io/issues"
+	},
+	"homepage": "https://github.com/mrxkon/mrxkon.github.io#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.7",
+		"sass": "^1.32.7"
+	}
 }
