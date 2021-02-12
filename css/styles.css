@@ -212,6 +212,19 @@ header {
 	grid-gap: 1rem;
 }
 
+header .info {
+	display: flex;
+	align-items: center;
+}
+
+header .info a {
+	text-decoration: none;
+}
+
+header .info img {
+	width: 60px;
+}
+
 header nav {
 	display: flex;
 	justify-content: space-between;
@@ -278,7 +291,21 @@ header nav a.active {
 	grid-gap: 1rem;
 }
 
-.home .page-title p,
-.home .page-title a {
+.home .page-title .split p,
+.home .page-title .split a {
 	color: var(--color-white);
+	font-size: var(--font-size-lg);
+	font-weight:
+}
+
+.home .page-title .split .child-img {
+	text-align: center;
+}
+
+.home .page-title .split .child-img img {
+	border-style: solid;
+	border-width: 0px 20px 5px 0px;
+	border-color: rgba(45,45,45,0.17);
+	border-radius: 500px 500px 500px 0px;
+	margin-top: -230px;
 }
