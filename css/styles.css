@@ -443,3 +443,7 @@ footer .container {
 	word-wrap: normal !important;
 	word-break: normal;
 }
+
+.hideme {
+	display: none;
+}
