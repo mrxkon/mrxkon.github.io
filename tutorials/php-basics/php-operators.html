@@ -5,122 +5,81 @@ permalink: /tutorials/php-basics/php-operators/
 description: You will be using PHP Operators to perform actions on certain values. You can use them to perform various actions within your PHP.
 body_class: content-white tutorial php-operators
 ---
-You will be using **PHP Operators** to perform actions on certain values. You can use them to perform various actions within your PHP. Such as math, comparisons, for conditions and for assignments to name a few.
-
-Make sure to give a good read at this last part of the [PHP Basics]({{ site.site_url }}/php-basics/) tutorials as there are plenty of operators to remember. You can always come back here though for a quick review if needed!
-
-## PHP Operators TOC
-- [Assignment](#assignment).
-- [Arithmetic](#arithmetic).
-- [Logical](#logical).
-- [Comparison](#comparison).
-- [Incrementing & Decrementing](#incremeting--decrementing).
-- [String](#string).
-- [Array](#array).
-- [Spaceship](#spaceship).
-- [Null Coalescing](#null-coalescing).
-- [Ternary](#ternary).
-
-## Assignment
-
-Operator|Syntax|Description
----|---|---
-`=`|`$a = $b`|$a gets set to the value of $b (Equals)
-`+=`|`$a += $b`|$a gets set to $a + $b (Addition)
-`-=`|`$a -= $b`|$a gets set to $a - $b (Subtraction)
-`*=`|`$a *= $b`|$a gets set to $a * $b (Multiplication)
-`/=`|`$a /= $b`|$a gets set to $a / $b (Division)
-`%=`|`$a %= $b`|$a gets set to $a % $b (Modulus)
-`**=`|`$a **= $b`|$a gets set to $a ** $b (Exponentiation)
-
-## Arithmetic
-
-Operator|Syntax|Description
----|---|---
-`+`|`$a + $b`|Sum of $a and $b
-`-`|`$a - $b`|Difference of $a and $b
-`*`|`$a * $b`|Product of $a and $b
-`/`|`$a / $b`|Quotient of $a and $b
-`%`|`$a % $b`|Remainder of $a / $b
-`**`|`$a ** $b`|Result of raising $a to the $b‘th power
-
-## Logical
-
-Operator|Syntax|Description
----|---|---
-`and`|`$a and $b`|True if both $a and $b are true
-`&&`|`$a && $b`|True if both $a and $b are true
-`or`|`$a or $b`|True if either $a or $b is true
-`||`|`$a || $b`|True if either $a or $b is true
-`xor`|`$a xor $b`|True if either $a or $b is true, but not both
-`!`|`!$a`|True if $a is not true
-
-## Comparison
-
-Operator|Syntax|Description
----|---|---
-`==`|`$a == $b`|True if values of $a and $b are equal
-`===`|`$a === $b`|True if both values and data types of $a and $b are equal
-`!=`|`$a != $b`|True if $a is not equal to $b
-`<>`|`$a <> $b`|True if $a is not equal to $b
-`!==`|`$a !== $b`|True if $a is not equal to $b or they are not in the same data type
-`>`|`$a > $b`|True if $a is greater than $b
-`<`|`$a < $b`|True if $a is less than $b
-`>=`|`$a >= $b`|True if $a is greater than or equal to $b
-`<=`|`$a <= $b`|True if $a is less than or equal to $b
-
-## Incrementing & Decrementing
-
-Operator|Syntax|Description
----|---|---
-`++`|`++$a`|Increments $a by one, then returns $a
-`++`|`$a++`|Returns $a, then increments $a by one.
-`--`|`--$a`|Decrements $a by one, then returns $a
-`--`|`$a--`|Returns $a, then decrements $a by one.
-
-## String
-
-Operator|Syntax|Description
----|---|---
-`.`|`$a . $b`|Returns the concatenation of its $a and $b
-`.=`|`$a .= $b`|$a gets set to $a . $b
-
-## Array
-
-Operator|Syntax|Description
----|---|---
-`+`|`$a + $b`|Returns the union of $a and $b arrays.
-`+=`|`$a += $b`|$a gets set to $a + $b
-`==`|`$a == $b`|True if $a and $b has equal key/value pairs
-`===`|`$a === $b`|True if $a and $b has equal key/value pairs in the same order and of same data type.
-`!=`|`$a != $b`|True if $a and $b are not equal.
-`<>`|`$a <> $b`|True if $a and $b are not equal.
-`!==`|`$a !== $b`|True if $a and $b has different orders, different key/value pairs or values of different data types.
-
-## Spaceship
-
-Operator|Syntax|Description
----|---|---
-`<=>`|`1 <=> 1`|Returns 0 since both sides are equal.
-`<=>`|`2 <=> 1`|Returns 1 as left side is greater.
-`<=>`|`1 <=> 2`|Returns -1 as right side is greater.
-
-The spaceship operator was added since PHP 7. You can compare [integers]({{ site.site_url }}/php-basics/php-data-types/#integer), [floats]({{ site.site_url }}/php-basics/php-data-types/#float) or [strings]({{ site.site_url }}/php-basics/php-strings/).
-
-## Null Coalescing
-
-
-Operator|Syntax|Description
----|---|---
-`??`|`$a ?? 1`|Returns 1 if $a was null.
-
-The null coalescing operator was introduced since PHP 7. It's basically like an `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals/) but it only does one thing.
-
-If the variable checked is null, it will assign it the new value.
-
-```php
-<?php
-
+<div id="content" class="content">
+	<div class="container pt-10">
+		<p>You will be using PHP Operators to perform actions on certain values. You can use them to perform various actions within your PHP. Such as math, comparisons, for conditions and for assignments to name a few.</p>
+		<p>Make sure to give a good read at this last part of the PHP Basics <a href="{{ site.site_url }}/tutorials/">tutorials</a> as there are plenty of operators to remember. You can always come back here though for a quick review if needed!</p>
+		<h3>PHP Operators TOC</h3>
+		<ul aria-label="PHP Operators Table of Contents">
+			<li><a href="#assignment">Assignment</a>.</li>
+			<li><a href="#arithmetic">Arithmetic</a>.</li>
+			<li><a href="#logical">Logical</a>.</li>
+			<li><a href="#comparison">Comparison</a>.</li>
+			<li><a href="#incremeting-decrementing">Incrementing &amp; Decrementing</a>.</li>
+			<li><a href="#string">String</a>.</li>
+			<li><a href="#array">Array</a>.</li>
+			<li><a href="#spaceship">Spaceship</a>.</li>
+			<li><a href="#null-coalescing">Null Coalescing</a>.</li>
+			<li><a href="#ternary">Ternary</a>.</li>
+		</ul>
+		<h3 id="assignment">Assignment</h3>
+		<p><code class="language-php">=</code>, $a gets set to the value of $b (equals) <code class="language-php">$a = $b</code></p>
+		<p><code class="language-php">+=</code>, $a gets set to $a + $b (addition) <code class="language-php">$a += $b</code></p>
+		<p><code class="language-php">-=</code>, $a gets set to $a - $b (subtraction) <code class="language-php">$a -= $b</code></p>
+		<p><code class="language-php">*=</code>, $a gets set to $a * $b (multiplication) <code class="language-php">$a *= $b</code></p>
+		<p><code class="language-php">/=</code>, $a gets set to $a / $b (division) <code class="language-php">$a /= $b</code></p>
+		<p><code class="language-php">%=</code>, $a gets set to $a % $b (modulus) <code class="language-php">$a %= $b</code></p>
+		<p><code class="language-php">**=</code>, $a gets set to $a ** $b (exponentiation) <code class="language-php">$a **= $b</code></p>
+		<h3 id="arithmetic">Arithmetic</h3>
+		<p><code class="language-php">+</code>, sum of $a and $b <code class="language-php">$a + $b</code></p>
+		<p><code class="language-php">-</code>, difference of $a and $b <code class="language-php">$a - $b</code></p>
+		<p><code class="language-php">*</code>, product of $a and $b <code class="language-php">$a * $b</code></p>
+		<p><code class="language-php">/</code>, quotient of $a and $b <code class="language-php">$a / $b</code></p>
+		<p><code class="language-php">%</code>, remainder of $a / $b <code class="language-php">$a % $b</code></p>
+		<p><code class="language-php">**</code>, result of raising $a to the $b‘th power <code class="language-php">$a ** $b</code></p>
+		<h3 id="logical">Logical</h3>
+		<p><code class="language-php">and</code>, true if both $a and $b are true <code class="language-php">$a and $b</code></p>
+		<p><code class="language-php">&&</code>, true if both $a and $b are true <code class="language-php">$a && $b</code></p>
+		<p><code class="language-php">or</code>, true if either $a or $b is true <code class="language-php">$a or $b</code></p>
+		<p><code class="language-php">||</code>, true if either $a or $b is true <code class="language-php">$a || $b</code></p>
+		<p><code class="language-php">xor</code>, true if either $a or $b is true, but not both <code class="language-php">$a xor $b</code></p>
+		<p><code class="language-php">!</code>, true if $a is not true <code class="language-php">!$a</code></p>
+		<h3 id="comparison">Comparison</h3>
+		<p><code class="language-php">==</code>, true if values of $a and $b are equal <code class="language-php">$a == $b</code></p>
+		<p><code class="language-php">===</code>, true if both values and data types of $a and $b are equal <code class="language-php">$a === $b</code></p>
+		<p><code class="language-php">!=</code>, true if $a is not equal to $b <code class="language-php">$a != $b</code></p>
+		<p><code class="language-php">&lt;></code>, true if $a is not equal to $b <code class="language-php">$a &lt;> $b</code></p>
+		<p><code class="language-php">!==</code>, true if $a is not equal to $b or they are not in the same data type <code class="language-php">$a !== $b</code></p>
+		<p><code class="language-php">></code>, true if $a is greater than $b <code class="language-php">$a > $b</code></p>
+		<p><code class="language-php">&lt;</code>, true if $a is less than $b <code class="language-php">$a &lt; $b</code></p>
+		<p><code class="language-php">>=</code>, true if $a is greater than or equal to $b <code class="language-php">$a >= $b</code></p>
+		<p><code class="language-php">&lt;=</code>, true if $a is less than or equal to $b <code class="language-php">$a &lt;= $b</code></p>
+		<h3 id="incremeting-decrementing">Incrementing & Decrementing</h3>
+		<p><code class="language-php">++</code>, increments $a by one, then returns $a <code class="language-php">++$a</code></p>
+		<p><code class="language-php">++</code>, returns $a, then increments $a by one <code class="language-php">$a++</code></p>
+		<p><code class="language-php">--</code>, decrements $a by one, then returns $a <code class="language-php">--$a</code></p>
+		<p><code class="language-php">--</code>, returns $a, then decrements $a by one <code class="language-php">$a--</code></p>
+		<h3 id="string">String</h3>
+		<p><code class="language-php">.</code>, returns the concatenation of its $a and $b <code class="language-php">$a . $b</code></p>
+		<p><code class="language-php">.=</code>, $a gets set to $a . $b <code class="language-php">$a .= $b</code></p>
+		<h3 id="array">Array</h3>
+		<p><code class="language-php">+</code>, returns the union of $a and $b arrays <code class="language-php">$a + $b</code></p>
+		<p><code class="language-php">+=</code>, $a gets set to $a + $b <code class="language-php">$a += $b</code></p>
+		<p><code class="language-php">==</code>, true if $a and $b has equal key/value pairs <code class="language-php">$a == $b</code></p>
+		<p><code class="language-php">===</code>, true if $a and $b has equal key/value pairs in the same order and of same data type  <code class="language-php">$a === $b</code></p>
+		<p><code class="language-php">!=</code>, true if $a and $b are not equal  <code class="language-php">$a != $b</code></p>
+		<p><code class="language-php">&lt;></code>, true if $a and $b are not equal  <code class="language-php">$a &lt;> $b</code></p>
+		<p><code class="language-php">!==</code>, true if $a and $b has different orders, different key/value pairs or values of different data types <code class="language-php">$a !== $b</code></p>
+		<h3 id="spaceship">Spaceship</h3>
+		<p><code class="language-php">&lt;=></code>, returns 0 since both sides are equal <code class="language-php">1 &lt;=> 1</code></p>
+		<p><code class="language-php">&lt;=></code>, returns 1 as left side is greater <code class="language-php">2 &lt;=> 1</code></p>
+		<p><code class="language-php">&lt;=></code>, returns -1 as right side is greater <code class="language-php">1 &lt;=> 2</code></p>
+		<p>The spaceship operator was added since PHP 7. You can compare <a href="{{ site.site_url }}/tutorials/php-basics/php-data-types/#integer">integers</a>, <a href="{{ site.site_url }}/tutorials/php-basics/php-data-types/#float">floats</a> or <a href="{{ site.site_url }}/tutorials/php-basics/php-strings/">strings</a>.</p>
+		<h3 id="null-coalescing">Null Coalescing</h3>
+		<p><code class="language-php">??</code>, returns 1 if $a was null <code class="language-php">$a ?? 1</code></p>
+		<p>The null coalescing operator was introduced since PHP 7. It's basically like an <code class="language-php">if</code> <a href="{{ site.site_url }}/tutorials/php-basics/php-conditionals/">conditional</a> but it only does one thing.</p>
+		<p>If the variable checked is null, it will assign it the new value.</p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * If the $name is null
  * Echo 'Konstantinos'
@@ -142,35 +101,22 @@ echo $name ?? 'Konstantinos';
  *
  */
 
-echo '<br>';
+echo '&lt;br>';
 
 $a = null;
 $b = null;
 $c = 5;
 $d = 10;
 
-echo $a ?? $b ?? $c ?? $d;
-```
-
-## Ternary
-
-Operator|Syntax|Description
----|---|---
-`?:`|`$a ?: 1`|Returns 1 if $a was null.
-
-The ternary operator is like a short `if` [conditional]({{ site.site_url }}/php-basics/php-conditionals/) as well.
-
-Its full [syntax]({{ site.site_url }}/php-basics/php-syntax/) is like this to understand it a bit better.
-
-`(condition) ? ( // code if true ) : ( // code if false )`
-
-Since PHP 5.3, you can omit the true expression making it even easier to use.
-
-Note that even though you can nest multiple ternary operators similar to the conditional if statements I wouldn’t recommend it as it would be really hard to read.
-
-```php
-<?php
-
+echo $a ?? $b ?? $c ?? $d;</code></pre>
+		<h3 id="ternary">Ternary</h3>
+		<p><code class="language-php">?:</code>, returns 1 if $a was null <code class="language-php">$a ?: 1</code></p>
+		<p>The ternary operator is like a short <code class="language-php">if</code> <a href="{{ site.site_url }}/tutorials/php-basics/php-conditionals/">conditional</a> as well.</p>
+		<p>Its full <a href="{{ site.site_url }}/tutorials/php-basics/php-syntax/">syntax</a> is like this to understand it a bit better.</p>
+		<p><code class="language-php">(condition) ? ( do_something ) : ( do_something )</code></p>
+		<p>Since PHP 5.3, you can omit the true expression making it even easier to use.</p>
+		<p>Note that even though you can nest multiple ternary operators similar to the conditional if statements I wouldn’t recommend it as it would be really hard to read.</p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * If the number is 1
  * echo "The number is 1."
@@ -187,11 +133,10 @@ echo ( 1 === $number ) ? 'The number is 1.' : 'There is no number!';
  * this could be the shorter version.
  */
 
-echo '<br>Shorter version: ';
+echo '&lt;br>Shorter version: ';
 
-echo ( 1 === $number ) ?: 'There is no number!';
-```
-
-## Extra Tips for PHP Operators
-
-Make sure to be comparing equal [data types]({{ site.site_url }}/php-basics/php-data-types/). Comparing or doing math etc on strings vs numbers, for example, will be returning wrong results, if not errors.
+echo ( 1 === $number ) ?: 'There is no number!';</code></pre>
+		<h3>Extra Tips for PHP Operators</h3>
+		<p>Make sure to be comparing equal <a href="{{ site.site_url }}/tutorials/php-basics/php-data-types/">data types</a>. Comparing or doing math etc on strings vs numbers, for example, will be returning wrong results, if not errors.</p>
+	</div>
+</div>
