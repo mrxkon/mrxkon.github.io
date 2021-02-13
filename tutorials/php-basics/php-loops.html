@@ -18,7 +18,7 @@ body_class: content-white tutorial php-loops
 		<p>I'd say that the <code class="language-php">for</code> loop is one of the weirdest to use. But if you can understand it's basic it becomes really easy.</p>
 		<p>You have to use three expressions here as a starting point, an ending point and in the middle the conditional that you are checking with.</p>
 		<p>Note that the starting & conditional are ending with an <code class="language-php">;</code> character but the ending does not.</p>
-		<p>The <code class="language-php">for</code> loop syntax. <code class="language-php">for ( starting; conditional; ending ) {}</code></p>
+		<p>The <code class="language-php">for</code> loop syntax. <code class="language-php">for ( starting; conditional; ending ) { do_something }</code></p>
 <pre><code class="language-php line-numbers">&lt;?php
 /**
  * We say that $i starts with 1.
@@ -35,8 +35,8 @@ body_class: content-white tutorial php-loops
  * 5
  */
 
-for ( $i = 1; $i < 6; $i++ ) {
-	echo $i . '<br>';
+for ( $i = 1; $i &lt; 6; $i++ ) {
+	echo $i . '&lt;br>';
 }</code></pre>
 		<p>Each of the three expressions can be either empty or have multiple expressions as well that you can separate with a comma.</p>
 <pre><code class="language-php line-numbers">&lt;?php
@@ -69,8 +69,8 @@ for ( $y = 20, $z = 30; $y <= $z; $y++, $z-- ) {
 
 echo '&lt;div style="line-height:0.5">';
 
-for ( $y = 0; $y < 10; $y++ ) {
-	for ( $x = 0; $x < 10; $x++ ) {
+for ( $y = 0; $y &lt; 10; $y++ ) {
+	for ( $x = 0; $x &lt; 10; $x++ ) {
 		echo '*';
 	}
 
@@ -80,7 +80,7 @@ for ( $y = 0; $y < 10; $y++ ) {
 echo '&lt;/div>';</code></pre>
 		<h3 id="foreach">Foreach</h3>
 		<p>The <code class="language-php">foreach</code> loop, as mentioned previously, can be used to loop through arrays. You can use it for any type of array, indexed, associative and multidimensional as well.
-		<p>The <code class="language-php">foreach</code> loop syntax. <code class="language-php">foreach ( $array as $key => $value ) {}</code></p>
+		<p>The <code class="language-php">foreach</code> loop syntax. <code class="language-php">foreach ( $array as $key => $value ) { do_something }</code></p>
 		<p>Let's start with an indexed array, on this occasion we can omit the <code class="language-php">$key</code>.</p>
 <pre><code class="language-php line-numbers">&lt;?php
 // Let's create an array.
@@ -174,7 +174,7 @@ foreach ( $books as $book => $information ) {
 		<h3 id="while-do-while">While & Do-While</h3>
 		<p>These two loops are very similar. Their only difference is that the <code class="language-php">while</code> loop will not execute the block of code at all is the condition is already met. The <code class="language-php">do-while</code> loop, on the other hand, will have to execute the code at least one time.</p>
 		<p>Let's see some examples so you can understand their difference.</p>
-		<p>The <code class="language-php">while</code> loop syntax. <code class="language-php">while ( $var &lt; $value ) {}</code></p>
+		<p>The <code class="language-php">while</code> loop syntax. <code class="language-php">while ( $var &lt; $value ) { do_something }</code></p>
 <pre><code class="language-php line-numbers">&lt;?php
 /**
  * A "while" loop.
@@ -193,7 +193,7 @@ while ( $count &lt;= 5 ) {
 	$count++;
 }</code></pre>
 
-		<p>The <code class="language-php">do-while</code> syntax. <code class="language-php">do {} while ( $var &lt; $value );</code></p>
+		<p>The <code class="language-php">do-while</code> syntax. <code class="language-php">do { do_something } while ( $var &lt; $value );</code></p>
 <pre><code class="language-php line-numbers">&lt;?php
 /**
  * A similar "do-while" loop.

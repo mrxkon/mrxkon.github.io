@@ -5,31 +5,26 @@ permalink: /tutorials/php-basics/php-conditionals/
 description: PHP Conditionals are used to run a block of code on different conditions. It&#039;s similar to what we&#039;ve seen on PHP Loops but this is more of a one-time thing.
 body_class: content-white tutorial php-conditionals
 ---
-You will be using PHP Conditionals to run a block of code on different conditions. You already saw something similar while reading about [PHP Loops]({{ site.site_url }}/php-basics/php-loops/). This is more of a one-time thing though, as "if this is the case then do this". It's that simple.
-
-## PHP Conditionals TOC
-
-- [if](#if).
-- [if-else](#if-else).
-- [if-elseif-else](#if-elseif-else).
-- [switch](#switch).
-
-## If
-
-The `if` conditional will run the block of code that exists inside the curly brackets only if the condition within the parenthesis is true.
-
-The `if` conditional [syntax]({{ site.site_url }}/php-basics/php-syntax/).
-
-`if ( condition ) { // code }`
-
-```php
-
+<div id="content" class="content">
+	<div class="container pt-10">
+		<p>You will be using PHP Conditionals to run a block of code on different conditions. You already saw something similar while reading about <a href="{{ site.site_url }}/tutorials/php-basics/php-loops/">PHP Loops</a>. This is more of a one-time thing though, as "if this is the case then do that". It's that simple.</p>
+		<h3>PHP Conditionals TOC</h3>
+		<ul aria-label="PHP Conditionals Table of Contents"></ul>
+			<li><a href="#if">if</a>.</li>
+			<li><a href="#if-else">if-else</a>.</li>
+			<li><a href="#if-elseif-else">if-elseif-else</a>.</li>
+			<li><a href="#switch">switch</a>.</li>
+		</ul>
+		<h3 id="if">If</h3>
+		<p>The <code class="language-php">if</code> conditional will run the block of code that exists inside the curly brackets only if the condition within the parenthesis is true.</p>
+		<p>The <code class="language-php">if</code> conditional <a href="{{ site.site_url }}/tutorials/php-basics/php-syntax/">syntax</a>. <code class="language-php">if ( condition ) { do_something }</code></p>
+<pre><code class="language-php line-numbers">&lt;?php
  * The Ace of Spades.
  */
 $ace = 'spades';
 
 if ( 'spades' === $ace ) {
-	$lyrics = <<<'LYRICS'
+	$lyrics = &lt;&lt;&lt;'LYRICS'
 If you like to gamble, I tell you I'm your man
 You win some, lose some, all the same to me
 
@@ -39,21 +34,12 @@ I don't share your greed, the only card I need is the Ace of Spades
 The Ace of Spades.
 LYRICS;
 
-	echo '<pre>' . $lyrics . '</pre>';
-}
-```
-
-## If-Else
-
-Since the `if` conditional will only run the block of code when the condition is met, we can use the `if-else` instead to run a different block of code when that condition is not met.
-
-The `if-else` conditional syntax.
-
-`if ( condition ) { // code } else { // code }`
-
-```php
-<?php
-
+	echo '&lt;pre>' . $lyrics . '&lt;/pre>';
+}</code></pre>
+		<h3 id="if-else">If-Else</h3>
+		<p>Since the <code class="language-php">if</code> conditional will only run the block of code when the condition is met, we can use the <code class="language-php">if-else</code> instead to run a different block of code when that condition is not met.</p>
+		<p>The <code class="language-php">if-else</code> conditional syntax. <code class="language-php">if ( condition ) { do_something } else { do_something }</code></p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * If the condition is true
  * echo something.
@@ -66,26 +52,17 @@ The `if-else` conditional syntax.
  */
 $date = date( 'a' );
 
-echo 'Current date: ' . date( 'h:i:s a' ) . '<br>';
+echo 'Current date: ' . date( 'h:i:s a' ) . '&lt;br>';
 
 if ( 'am' === $date ) {
 	echo 'Ante meridiem.';
 } else {
 	echo 'Post meridiem.';
-}
-```
-
-## If-Elseif-Else
-
-Sometimes you will need to take the conditional some steps further. You can always use as many `elseif` statements as you like to extend the conditional and run different blocks of code.
-
-The `if-esleif-else` conditional syntax.
-
-`if ( condition ) { // code } elseif { // code } else { // code }`
-
-```php
-<?php
-
+}</code></pre>
+		<h3 id="if-elseif-else">If-Elseif-Else</h3>
+		<p>Sometimes you will need to take the conditional some steps further. You can always use as many <code class="language-php">elseif</code> statements as you like to extend the conditional and run different blocks of code.</p>
+		<p>The <code class="language-php">if-esleif-else</code> conditional syntax. <code class="language-php">if ( condition ) { do_something } elseif ( condition ) { do_something } else { do_something }</code></p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * If the condition is true
  * do something.
@@ -115,24 +92,12 @@ if ( $current_day >= 21 ) {
 	$quarter = '1st';
 }
 
-echo 'in the ' . $quarter . ' quarter of the month.';
-```
-
-## Switch
-
-If you want to compare the same expression instead of using the `if-elseif-else `conditional you can also use the switch. In my opinion `switch` is way more readable, especially when the condition can be met on many occasions. It is the syntax itself that makes it easier to read.
-
-The `switch` conditional syntax.
-
-`switch ( var ) { case var: // code; break; }`
-
-In switch we use `break;` on every `case` to get out of the `switch` since the condition has been met. We can also use the `default:` case or omit it if we don't want to do anything similar to a final `else`.
-
-I'll add an easy example to see the difference but imagine having ten plus different `cases`.
-
-```php
-<?php
-
+echo 'in the ' . $quarter . ' quarter of the month.';</code></pre>
+		<h3 id="switch">Switch</h3>
+		<p>If you want to compare the same expression instead of using the <code class="language-php">if-esleif-else</code> conditional you can also use the switch. In my opinion <code class="language-php">switch</code> is way more readable, especially when the condition can be met on many occasions. It is the syntax itself that makes it easier to read.</p>
+		<p>In <code class="language-php">switch</code> we use <code class="language-php">break;</code> on every <code class="language-php">case</code> to get out of the switch block since a condition has been met. We can also use the <code class="language-php">default:</code> case or omit it if we don't want to do anything similar to a final <code class="language-php">else</code>.</p>
+		<p>The <code class="language-php">switch</code> conditional syntax. <code class="language-php">switch ( $var ) { case var_value: do_something; break; }</code></p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * With an if else conditional
  * you could do it like this.
@@ -148,13 +113,13 @@ if ( 1 === $batch ) {
 } elseif ( 2 === $batch ) {
 	echo 'Two batch...';
 } elseif ( 3 === $batch ) {
-	echo 'One batch, Two batch.<br>Penny and Dime...';
+	echo 'One batch, Two batch.&lt;br>Penny and Dime...';
 } else {
 	echo 'The Punisher.';
 }
 
 
-echo '<br><br>Now the switch:<br><br>';
+echo '&lt;br>&lt;br>Now the switch:&lt;br>&lt;br>';
 
 
 /**
@@ -172,23 +137,16 @@ switch ( $batch ) {
 		echo 'Two batch...';
 		break;
 	case 3:
-		echo 'One batch, Two batch.<br>Penny and Dime...';
+		echo 'One batch, Two batch.&lt;br>Penny and Dime...';
 		break;
 	default:
 		echo 'The Punisher.';
 		break;
-}
-```
-
-## Extra Tips on PHP Conditionals
-
-If all the `>=`, `===` and other symbols in conditions that you see here are confusing, they are called [PHP Operators]({{ site.site_url }}/php-basics/php-operators/) and we will check those on an upcoming tutorial!
-
-For any of the mentioned cases of `if` conditionals, it's good to know that you can also nest them together. You can use a mixture of them as you see fit for your code.
-
-```php
-<?php
-
+}</code></pre>
+		<h3>Extra Tips on PHP Conditionals</h3>
+		<p>If all the <code class="language-php">>=</code>, <code class="language-php">===</code> and other symbols in conditions that you see here are confusing, you can check out the <a href="{{ site.site_url }}/tutorials/php-basics/php-operators/">PHP Operators</a> tutorial.</p>
+		<p>For any of the mentioned cases of <code class="language-php">if</code> conditionals, it's good to know that you can also nest them together. You can use a mixture of them as you see fit for your code.</p>
+<pre><code class="language-php line-numbers">&lt;?php
 /**
  * If its AM this would output:
  * The current day is the 23rd in the 4th quarter of the month.
@@ -215,5 +173,6 @@ if ( 'am' === $meridiem ) {
 	echo 'The current day is the ' . $ordinal_day . 'in the ' . $quarter . ' quarter of the month.';
 } else {
 	echo 'Sorry, this only works on AM.';
-}
-```
+}</code></pre>
+	</div>
+</div>
