@@ -9,11 +9,31 @@
 				</p>
 
 				&therefore; {{ site.time | date: '%Y' }} <a href="{{ site.site_url }}">xkon.dev</a> - Made with a keyboard and lots of love somewhere in Greece :) - <a href="{{ site.site_url }}/privacy-policy/">Privacy Policy</a> <br/>
-				Props also go to <a href="https://www.cssigniter.com/" target="_blank">CSSIgniter</a>, <a href="https://www.nevma.gr/" target="_blank">Nevma</a>, </a><a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> & <a href="https://prismjs.com" target="_blank">Prism</a> for making this site possible.
+				Props also go to <a href="https://www.cssigniter.com/" target="_blank">CSSIgniter</a>, <a href="https://www.nevma.gr/" target="_blank">Nevma</a>, </a><a href="https://pages.github.com" target="_blank">GitHub Pages</a>, <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> & <a href="https://prismjs.com" target="_blank">Prism</a> for making this site possible.
 			</div>
 		</footer>
 		{% if page.url contains '/php-basics/' %}
 		<script src="{{ site.site_url }}/js/prism.js" data-manual></script>
 		{% endif %}
+		<script>
+			document.addEventListener( 'DOMContentLoaded', function() {
+				var links = document.getElementsByTagName( 'a' ),
+					alen  = links.length;
+
+				for ( var i=0; i < alen; i++ ) {
+					if ( links[i].hasAttribute( 'target' ) ) {
+						var target = links[i].getAttribute( 'target' );
+
+						if ( target = '_blank' ) {
+							nw = document.createElement( 'span' );
+							nw.classList.add( 'screen-reader-text' );
+							nw.innerHTML = ', opens in a new window';
+
+							links[i].appendChild( nw );
+						}
+					}
+				}
+			});
+		</script>
 	</body>
 </html>
