@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Loops
-permalink: /php-basics/php-loops/
+permalink: /tutorials/php-basics/php-loops/
 description: PHP Loops are used to run a block of code until a condition is met. You can use them as simple count mechanisms, or to loop through data.
 body_class: php-loops
 ---

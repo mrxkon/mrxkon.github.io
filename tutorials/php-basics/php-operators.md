@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Operators
-permalink: /php-basics/php-operators/
+permalink: /tutorials/php-basics/php-operators/
 description: You will be using PHP Operators to perform actions on certain values. You can use them to perform various actions within your PHP.
 body_class: php-operators
 ---

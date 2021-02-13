@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Conditionals
-permalink: /php-basics/php-conditionals/
+permalink: /tutorials/php-basics/php-conditionals/
 description: PHP Conditionals are used to run a block of code on different conditions. It&#039;s similar to what we&#039;ve seen on PHP Loops but this is more of a one-time thing.
 body_class: php-conditionals
 ---

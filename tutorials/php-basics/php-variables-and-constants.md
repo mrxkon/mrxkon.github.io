@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Variables &amp; Constants
-permalink: /php-basics/php-variables-and-constants/
+permalink: /tutorials/php-basics/php-variables-and-constants/
 description: PHP variables &amp; constants are used for storing information that we can retrieve later on in our code. The key difference is the variables data can be...
 body_class: php-variables-and-constants
 ---

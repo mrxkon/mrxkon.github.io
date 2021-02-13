@@ -20,7 +20,7 @@
 		<meta name="twitter:title" content="{% if page.title == 'Hi!' %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}" />
 		<meta name="twitter:description" content="{{ page.description }}" />
 		<link href="{{ site.site_url }}/css/styles.css" rel="stylesheet" />
-		{% if page.url contains '/php-basics/' %}
+		{% if page.url contains '/tutorials/' %}
 		<link href="{{ site.site_url }}/css/prism.css" rel="stylesheet" />
 		{% endif %}
 	</head>
@@ -38,8 +38,8 @@
 				<nav aria-label="Primary menu">
 					<a class="{% if page.url == '/' %} active {% endif %}" href="{{ site.site_url }}/">Home</a>
 					<a class="{% if page.url == '/wp-contributions/' %} active {% endif %}" href="{{ site.site_url }}/wp-contributions/">WP Contributions</a>
-					<!-- <a class="{% if page.url contains '/php-basics/' %} active {% endif %}" href="{{ site.site_url }}/php-basics/">PHP Basics</a> -->
 					<a class="{% if page.url == '/tattoos/' %} active {% endif %}" href="{{ site.site_url }}/tattoos/">Tattoos</a>
+					<a class="{% if page.url contains '/tutorials/' %} active {% endif %}" href="{{ site.site_url }}/tutorials/">Tutorials</a>
 				</nav>
 			</header>
 		</div>

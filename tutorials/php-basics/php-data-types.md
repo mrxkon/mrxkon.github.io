@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PHP Data Types
-permalink: /php-basics/php-data-types/
+permalink: /tutorials/php-basics/php-data-types/
 description: Now it&#039;s a good time to talk a bit about the other PHP Data Types that exist!
 body_class: php-data-types
 ---
