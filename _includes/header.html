@@ -5,70 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<link rel="icon" href="/images/favicon/32x32.png" sizes="32x32" />
 		<title>{% if page.title == "Hi!" %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
-		<!-- custom css -->
-		<style>
-		body {
-			font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-			font-size: 16px;
-			font-weight: 300;
-			margin: 1rem;
-		}
-		a,
-		a:visited,
-		a:active {
-			color: #9b4dca;
-		}
-		header .container {
-			margin-top: 2.5rem;
-			text-align: center;
-		}
-		main {
-			margin-top: 2.5rem;
-		}
-		footer {
-			margin-bottom: 2.5rem;
-		}
-		.container {
-			max-width: 50rem;
-			margin: 0 auto;
-		}
-		.skiplink {
-			left: -999999px;
-			top: 1rem;
-			position: absolute;
-			background: var(--color-black);
-			color: var(--color-white);
-			padding: 1rem;
-		}
-		.skiplink:focus {
-			left: 0;
-		}
-		.screen-reader-text {
-			border: 0;
-			clip: rect(1px, 1px, 1px, 1px);
-			-webkit-clip-path: inset(50%);
-			clip-path: inset(50%);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute !important;
-			width: 1px;
-			word-wrap: normal !important;
-			word-break: normal;
-		}
-		.bar-divider {
-			background-color: #9b4dca;
-			height: 4px;
-			margin-top: 2.5rem;
-			margin-bottom: 2.5rem;
-		}
-		.tattoo-gallery img {
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-			max-width: 100%;
-		}
-		</style>
+		<style>body{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:16px;font-weight:300;margin:1rem}a,a:active,a:visited{color:#9b4dca}header .container{margin-top:2.5rem;text-align:center}main{margin-top:2.5rem}footer{margin-bottom:2.5rem}.container{max-width:50rem;margin:0 auto}.skiplink{left:-999999px;top:1rem;position:absolute;background:var(--color-black);color:var(--color-white);padding:1rem}.skiplink:focus{left:0}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal}.bar-divider{background-color:#9b4dca;height:4px;margin-top:2.5rem;margin-bottom:2.5rem}.tattoo-gallery img{margin-top:1rem;margin-bottom:1rem;max-width:100%}</style>
 		{% if page.url contains '/tutorials/' %}
 		<link href="{{ site.site_url }}/css/prism.css" rel="stylesheet" />
 		{% endif %}
