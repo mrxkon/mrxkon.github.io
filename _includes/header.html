@@ -55,7 +55,6 @@
 		<link href="{{ site.site_url }}/css/prism.css" rel="stylesheet" />
 		{% endif %}
 	</head>
-
 	<body class="{{ page.body_class }}">
 		<a href="#content" class="skiplink text-white">
 			Skip to content
@@ -68,12 +67,4 @@
 				</div>
 			</header>
 		</div>
-		<main id="main">
-			<div class="page-title">
-				<div class="container">
-					<h1>{{ page.title }}</h1>
-					{% if page.title == 'Hi!' %}
-					<p>I'm Konstantinos "xkon" Xenos, a&nbsp;WordPress Developer, DevOps, WP Core Contributor &amp; Component Maintainer&nbsp;from Greece. When not online &amp; coding, I spend my little free but quality time making music, painting or&nbsp;<a href="{{ site.url }}/tattoos/">tattooing</a>. If you're new to PHP make sure to read the <a href="{{ site.url }}/tutorials/">PHP Basics Tutorial</a>!</p>
-					{% endif %}
-				</div>
-			</div>
+		<main id="main" class="wrapper">
