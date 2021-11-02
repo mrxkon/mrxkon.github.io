@@ -7,13 +7,10 @@ body_class: tattoos
 ---
 <section class="tattoos">
 	<div class="container">
-		<h1>Tattoos</h1>
-		<h2>Time for some ink!</h2>
-		<div class="tattoo-gallery">
-			{% for i in (1..32) %}
-			<img loading="lazy" alt="Photo of a Tattoo" src="{{ site.site_url }}/images/tattoos/{{ i }}.jpg" />
-			{% endfor %}
-		</div>
+		<h1>Time for some ink!</h1>
+		{% for i in (1..32) %}
+		<img loading="lazy" alt="Photo of a Tattoo" src="{{ site.site_url }}/images/tattoos/{{ i }}.jpg" />
+		{% endfor %}
 	</div>
 </section>
 
