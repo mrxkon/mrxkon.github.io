@@ -14,12 +14,12 @@
 		function toggleDarkMode() {
 			var toggler = document.getElementById( 'dark-toggler' );
 
-			if ( 'false' === toggler.getAttribute( 'dark' ) ) {
-				toggler.setAttribute( 'dark', 'true' );
+			if ( 'false' === toggler.getAttribute( 'data-dark' ) ) {
+				toggler.setAttribute( 'data-dark', 'true' );
 				document.body.classList.add( 'dark' );
 				window.localStorage.setItem( 'xkondevDarkMode', 'yes' );
 			} else {
-				toggler.setAttribute( 'dark', 'false' );
+				toggler.setAttribute( 'data-dark', 'false' );
 				document.body.classList.remove( 'dark' );
 				window.localStorage.setItem( 'xkondevDarkMode', 'no' );
 			}
