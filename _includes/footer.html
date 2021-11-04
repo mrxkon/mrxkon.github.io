@@ -10,5 +10,47 @@
 		<script src="{{ site.site_url }}/js/prism.js"></script>
 		{% endif %}
 		<script>document.addEventListener("DOMContentLoaded",function(){for(var e=document.getElementsByTagName("a"),t=e.length,n=0;n<t;n++)if(e[n].hasAttribute("target")){e[n].getAttribute("target");"_blank"&&(nw=document.createElement("span"),nw.classList.add("screen-reader-text"),nw.innerHTML=", opens in a new window",e[n].appendChild(nw))}});</script>
+		<script>
+		function toggleDarkMode() {
+			var toggler = document.getElementById( 'dark-toggler' );
+
+			if ( 'false' === toggler.getAttribute( 'dark' ) ) {
+				toggler.setAttribute( 'dark', 'true' );
+				document.body.classList.add( 'dark' );
+				window.localStorage.setItem( 'xkondevDarkMode', 'yes' );
+			} else {
+				toggler.setAttribute( 'dark', 'false' );
+				document.body.classList.remove( 'dark' );
+				window.localStorage.setItem( 'xkondevDarkMode', 'no' );
+			}
+		}
+
+		function siteIsDarkMode() {
+			if ( 'yes' === window.localStorage.getItem( 'xkondevDarkMode' ) ) {
+				isDarkMode = true;
+			} else if ( 'no' === window.localStorage.getItem( 'xkondevDarkMode' ) ) {
+				isDarkMode = false;
+			}
+
+			return isDarkMode;
+		}
+
+		function DarkMode() {
+			var toggler = document.getElementById( 'dark-toggler' ),
+				isDarkMode = siteIsDarkMode();
+
+			if ( isDarkMode ) {
+				document.body.classList.add( 'dark' );
+			} else {
+				document.body.classList.remove( 'dark' );
+			}
+
+			if ( toggler && isDarkMode ) {
+				toggler.setAttribute( 'dark', 'true' );
+			}
+		}
+
+		DarkMode();
+		</script>
 	</body>
 </html>
