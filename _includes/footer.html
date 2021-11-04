@@ -10,6 +10,50 @@
 		<script src="{{ site.site_url }}/js/prism.js"></script>
 		{% endif %}
 		<script>document.addEventListener("DOMContentLoaded",function(){for(var e=document.getElementsByTagName("a"),t=e.length,n=0;n<t;n++)if(e[n].hasAttribute("target")){e[n].getAttribute("target");"_blank"&&(nw=document.createElement("span"),nw.classList.add("screen-reader-text"),nw.innerHTML=", opens in a new window",e[n].appendChild(nw))}});</script>
-		<script>function toggleDarkMode(){var e=document.getElementById("dark-toggler");"false"===e.getAttribute("data-dark")?(e.setAttribute("data-dark","true"),document.body.classList.add("dark"),window.localStorage.setItem("xkondevDarkMode","yes")):(e.setAttribute("data-dark","false"),document.body.classList.remove("dark"),window.localStorage.setItem("xkondevDarkMode","no"))}function siteIsDarkMode(){return"yes"===window.localStorage.getItem("xkondevDarkMode")?isDarkMode=!0:"no"===window.localStorage.getItem("xkondevDarkMode")&&(isDarkMode=!1),isDarkMode}function DarkMode(){var e=document.getElementById("dark-toggler"),t=siteIsDarkMode();t?document.body.classList.add("dark"):document.body.classList.remove("dark"),e&&t&&e.setAttribute("data-dark","true")}DarkMode();</script>
+		<script>
+			function toggleDarkMode() {
+			var toggler = document.getElementById( 'dark-toggler' );
+
+			if ( 'false' === toggler.getAttribute( 'data-dark' ) ) {
+				toggler.setAttribute( 'data-dark', 'true' );
+				toggler.innerHTML = 'Turn dark mode OFF';
+				document.body.classList.add( 'dark' );
+				window.localStorage.setItem( 'xkondevDarkMode', 'yes' );
+			} else {
+				toggler.setAttribute( 'data-dark', 'false' );
+				toggler.innerHTML = 'Turn dark mode ON';
+				document.body.classList.remove( 'dark' );
+				window.localStorage.setItem( 'xkondevDarkMode', 'no' );
+			}
+		}
+
+		function siteIsDarkMode() {
+			if ( 'yes' === window.localStorage.getItem( 'xkondevDarkMode' ) ) {
+				isDarkMode = true;
+			} else if ( 'no' === window.localStorage.getItem( 'xkondevDarkMode' ) ) {
+				isDarkMode = false;
+			}
+
+			return isDarkMode;
+		}
+
+		function DarkMode() {
+			var toggler = document.getElementById( 'dark-toggler' ),
+				isDarkMode = siteIsDarkMode();
+
+			if ( isDarkMode ) {
+				document.body.classList.add( 'dark' );
+			} else {
+				document.body.classList.remove( 'dark' );
+			}
+
+			if ( toggler && isDarkMode ) {
+				toggler.setAttribute( 'data-dark', 'true' );
+				toggler.innerHTML = 'Turn dark mode OFF';
+			}
+		}
+
+		DarkMode();
+		</script>
 	</body>
 </html>
