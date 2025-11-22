@@ -1,8 +1,115 @@
----
-layout: default
-title: Tattoos
-permalink: /tattoos/
-description: A collection of tattoos that I&#039;ve created and applied over the years.
-body_class: tattoos
----
-<section><div class="container tattoo-gallery"><h1>Time for some ink!</h1>{% for i in (1..32) %}<img loading="lazy" alt="Photo of a Tattoo" src="{{ site.site_url }}/images/tattoos/{{ i }}.jpg" />{% endfor %}</div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon/32x32.png" sizes="32x32">
+    <title>Tattoos · Kostas "xkon" Xenos</title>
+    <style>
+        /* Catppuccin Mocha Theme */
+        body {
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #a6e3a1;
+            text-align: center;
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .tattoo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+        
+        .tattoo-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #313244;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .tattoo-gallery img:hover {
+            transform: scale(1.05);
+            border-color: #a6e3a1;
+        }
+        
+        a {
+            color: #fab387;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #eba0ac;
+            text-decoration: underline;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #313244;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #45475a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">← Back to Home</a>
+    <section>
+        <div class="container tattoo-gallery">
+            <h1>Time for some ink!</h1>
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/1.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/2.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/3.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/4.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/5.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/6.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/7.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/8.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/9.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/10.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/11.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/12.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/13.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/14.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/15.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/16.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/17.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/18.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/19.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/20.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/21.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/22.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/23.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/24.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/25.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/26.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/27.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/28.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/29.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/30.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/31.jpg">
+            <img loading="lazy" alt="Photo of a Tattoo" src="/images/tattoos/32.jpg">
+        </div>
+    </section>
+</body>
+</html>
